@@ -1,6 +1,7 @@
 # HACKTICKS_2021
 
-"Short Minute" A chrome extension for easy resource and time management, with the option of an amazing to-do list to organize schedules and a timer to limit breaks! Everything with one click at a time.
+# "Short Minute" A chrome extension
+For easy resource and time management, with the option of an amazing to-do list to organize schedules and a timer to limit breaks! Everything with one click at a time.
 
 Aim is to build a Google Chrome Extension called "Short Minute" that will act as a single platform to:
 
