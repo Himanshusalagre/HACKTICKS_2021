@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "short Minute",
+  "description": "Access and manage all the resources at one place and Schedule your day.",
+  "version": "1.0.0",
+  "icons": { "128": "logo2.png" },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
