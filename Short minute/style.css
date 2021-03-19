@@ -1,0 +1,229 @@
+
+
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 400px;
+        padding: 0;
+        width: 384px;
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;
+      }
+
+      a:link,
+      a:visited {
+        color: #000000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 15px;
+      }
+
+   /* Dropdown styling */
+
+   .btn {
+    background-color: rgba(241, 241, 241);
+    color:rgb(255, 22, 22);
+    padding: 16px;
+    font-size: 27px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-left:40px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 60px;
+    z-index: 1;
+    margin-left: 30px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ 
+  
+/* icon2 */
+
+.profile-btn {
+  background-color: rgba(241, 241, 241);
+  color:rgb(255, 22, 22);
+  padding: 16px;
+  font-size: 27px;
+  border: none;
+  outline: none;
+  
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.profile {
+  position: absolute;
+  display: inline-block;
+  
+}
+
+
+
+
+
+/* Blog icon */
+.blog-btn {
+  background-color: rgba(241, 241, 241);
+  color:rgb(255, 22, 22);
+  padding: 16px;
+  font-size: 27px;
+  border: none;
+  outline: none;
+  margin-left: 80px;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.blog {
+  position: absolute;
+  display: inline-block;
+  margin-left:50px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.blog-web {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  z-index: 1;
+  margin-left: 80px;
+}
+
+/* Links inside the dropdown */
+.blog-web a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.blog-web a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.blog:hover .blog-web {
+  display: block;
+
+}
+
+/* courses icon */
+
+.courses-btn {
+  background-color: rgba(241, 241, 241);
+  color:rgb(255, 22, 22);
+  padding: 16px;
+  font-size: 27px;
+  border: none;
+  outline: none;
+  margin-left: 140px;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.courses {
+  position: absolute;
+  display: inline-block;
+  margin-left:80px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.courses-web {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  z-index: 1;
+  margin-left: 100px;
+}
+
+/* Links inside the dropdown */
+.courses-web a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.courses-web a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.courses:hover .courses-web {
+  display: block;
+
+}
+
+/*
