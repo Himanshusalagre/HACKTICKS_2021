@@ -8,4 +8,5 @@ Aim is to build a Google Chrome Extension called "Short Minute" that will act as
     - All all the resources at one place
     - Manage the to-dos
     - Track the Progress of Work or  Study 
-    - This Extension automatically suggests to the user some good resources (like Coursera Courses, Youtube Channels, articles etc.) to start with their programming aka coding  journey or Computer Science in broader aspects. 
+    - This Extension automatically suggests to the user some good resources (like Coursera Courses, Youtube Channels, articles etc.) 
+    to start with their programming, coding  journey or Computer Science in broader aspects. 
