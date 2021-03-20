@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TODO List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <style>
+        
+html,body{
+    width: 384px;
+    font-size: 14px;
+    margin: 0px;
+    min-height: 400px;
+    padding: 5px, 5px;
+    background-color: #111;
+    box-sizing: border-box;
+}
+
+/* h1 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 30;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+} */
+
+.title{
+	color: lime;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    width: 250px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+/* .add{
+	outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 25px;
+    width: 30px;
+    background-color: lime;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+} */
+
+.add:hover{
+	opacity: 0.7;
+}
+
+h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #66ff00;
+      }
+
+.modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #66ff00;
+        font-size: 15px;
+      }
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 20px;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 20px;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        
+        <h1 class="logo">
+          <a style="color: chartreuse;" href="popup.html" class="previous round">&#8249;</a>
+          <img class="logo-icon" src="images/logo1.png" />Short Minute
+          <span class="version">(1.0.0)</span>
+        </h1>
+      </div>
+    <div style="padding: 20px;" class="inputDiv">
+    	   <input type="text" class="input" placeholder="What Do You Want to Do...">
+    	   <button style=" border-radius: 25px; margin: 5px; padding: 5px , 5px ; border: none; outline: none; color: black; background-color: rgb(147, 247, 144);" class="add">ADD</button>
+    </div>
+    <div class="container">
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

@@ -29,22 +29,28 @@ var mydata=[
 
 ];
 
-function makedropdown(data, level1filter){
-    const filterArray = data.filter(r=> r[0] === level1filter);
+function makedropdown(data, filterasarray, targetelement){
+    const filterArray =  filterarray(data,filterasarray);
 
+    const uniqueList = getuniquevalues(filterArray,filterasarray.length);
     
-    const uniqueList = getuniquevalues(filterArray, 1);
-    
-     
-    const selectLevel2 = document.getElementById("level3");
-
-    populatedropdown(selectLevel2, uniqueList);
+    populatedropdown(targetelement, uniqueList);
 
 } 
 
 function applydropdown(){
-    const selectlevel1value = document.getElementById("level2").value;
-    makedropdown(mydata, selectlevel1value);
+    const selectlevel1value = document.getElementById("level1").value;
+    const selectLevel2 = document.getElementById("level2");
+
+    makedropdown(mydata, [selectlevel1value],selectLevel2 );
+}
+
+function applydropdown2(){
+    const selectlevel1value = document.getElementById("level1").value;
+    const selectlevel2value = document.getElementById("level2").value;
+    const selectLevel3 = document.getElementById("level3");
+
+    makedropdown(mydata, [selectlevel1value,selectlevel2value],selectLevel3 );
 }
 
 function afterdocumentload(){
@@ -61,7 +67,7 @@ function getuniquevalues(data,index){
 
 function populatefirstleveldropdown(){
     const uniqueList = getuniquevalues(mydata,0);
-    const el = document.getElementById("level2");
+    const el = document.getElementById("level1");
     populatedropdown(el, uniqueList);
 
 }
@@ -75,7 +81,14 @@ function populatedropdown(el, listasarray){
     });
 }
 
-document.getElementById("level2").addEventListener("change", applydropdown);
+function filterarray(data,filterasarray){
+  return  data.filter(r => filterasarray.every((item,i) => item === r[i]));
+
+}
+
+document.getElementById("level1").addEventListener("change", applydropdown);
+document.getElementById("level2").addEventListener("change", applydropdown2);
+
 document.addEventListener("DOMContentLoaded",afterdocumentload);
 
 // $(function(){
