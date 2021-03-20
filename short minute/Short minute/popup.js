@@ -6,8 +6,6 @@ var mydata=[
     ["python","Courses","udemy.com"],
     ["python","Courses","Coursera.com"],
 
-    
-    
     ["JAVA","Courses","Udacity.com"],
     ["JAVA","Courses","Skillshare.com"],
     ["JAVA","blogs","www.baeldung.com"],
@@ -21,8 +19,7 @@ var mydata=[
     ["Javascript","blogs","https://www.w3schools.com/js/DEFAULT.asp"],
     ["Javascript","Courses","eduonix.com"],
     ["Javascript","Courses","Lynda.com"],
-
-    ["web dev.","youtube","FreeCodeCamp."],
+     ["web dev.","youtube","FreeCodeCamp."],
     ["web dev.","youtube","The Coding Train"],
     
 
