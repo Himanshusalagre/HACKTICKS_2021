@@ -88,6 +88,13 @@ document.getElementById("level2").addEventListener("change", applydropdown2);
 
 document.addEventListener("DOMContentLoaded",afterdocumentload);
 
+let btnopen = document.querySelector('button');
+let input  = document.querySelector('input');
+
+btnopen.addEventListener('click', () =>{
+    window.open(input.value, '_blank');
+} );
+
 // $(function(){
 //     var countryOptions;
 //     var stateOptions;

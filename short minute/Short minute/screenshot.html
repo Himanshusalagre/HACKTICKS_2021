@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+   <style>
+       
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 400px;
+        padding: 0;
+        width: 384px;
+        
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #66ff00;
+      }
+
+      a:link,
+      a:visited {
+        color: #66ff00;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #66ff00;
+        font-size: 15px;
+      }
+
+      #btn{
+          width: 120px;
+          height: 35px;
+          background-color: #f3f1f1;
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(14, 13, 13);
+          border:none;
+          border-radius: 15px;
+          outline: none;
+          margin-top: 220px;
+          margin-left: 100px;
+          
+
+      }
+      #frame{
+        width: 300px;
+        height: 150px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      #screenshot{
+          position: absolute;
+          top: 120px;
+          left:370px;
+
+      }
+   </style> 
+</head>
+<body>
+
+    <div class="modal-header">
+        
+        <h1 class="logo">
+          <a href="popup.html" class="previous round">&#8249;</a>
+          <img class="logo-icon" src="images/logo1.png" />Short Minute
+          <span class="version">(1.0.0)</span>
+        </h1>
+      </div>
+
+    <button id="btn" >Take screenshot</button>
+        <img src="frame.png" id="frame">
+        <canvas id="screenshot"></canvas>
+
+        <script>
+            
+    
+    const a = navigator.mediaDevices.getDisplayMedia;
+    const takescreenshot = async() =>   {
+        const stream = await navigator.mediaDevices.getDisplayMedia({
+            video : {MediaSource: 'screen'}
+        });
+        const track = stream.getVideoTracks()[0];
+        const image = new ImageCapture(track);
+        const bitmap = await image.grabframe();
+        track.stop();
+        const canvas = document.getElementById('screenshot');
+        canvas.width = bitmap.width;
+        canvas.height = bitmap.height;
+        const context = canvas.getContext('2d');
+        context.drawImage(bitmap,0,0,500,bitmap.height/2);
+        const img = canvas.toDataURL();
+        const res = await fetch(img);
+        const buff = await res.arrayBuffer();
+        const file =[
+            new File ([buff], 'photo_${new Date()}.jpg', {
+                type:'image/jpeg'
+            })
+        ];
+return file;
+
+    };
+//    const button = document.getElementById("btn").addEventListener.onclick = () => a ? takescreenshot() : {};
+    const button = document.getElementById("btn").onclick = () => a ? takescreenshot() : {};
+  
+        </script>
+</body>
+</html>
